@@ -1,17 +1,2 @@
-body {
-  background: #f5f5f5;
-  color: #212121;
-}
-
-$dir:    top;
-$blue:   #056ef0;
-$column: 200px;
-
-.menu_link {
-    background: $blue;
-    width: $column;
-}
-.menu {
-    width: calc(4 * $column);
-    margin-$(dir): 10px;
-}
+@import 'normalize.css';
+@import 'skeleton.css';
