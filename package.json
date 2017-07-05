@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-boilerplate",
-  "version": "1.0.0",
-  "description": "Get started with React and Redux",
+  "name": "ruhig",
+  "version": "0.1.0",
+  "description": "Release announcement header image generator",
   "scripts": {
     "start": "npm run watch:css & npm run watch:js & npm run serve",
     "serve": "browser-sync start -s --ss public -f 'public/**' --no-notify --no-open",
