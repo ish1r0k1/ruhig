@@ -1,2 +1,36 @@
 @import 'normalize.css';
 @import 'skeleton.css';
+
+#app {
+  padding: 30px 0;
+}
+
+.label { @extend label }
+
+.preview-upload-image {
+  img {
+    max-width: 200px;
+    height: auto;
+  }
+}
+
+input[type=file] {
+  @extend input;
+}
+
+.preview-upload-image {
+  @extend input;
+}
+
+.canvas {
+  canvas {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.version {
+  font-size: .4em;
+  color: #a1a1a1;
+}
