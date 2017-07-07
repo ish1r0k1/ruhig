@@ -7,10 +7,11 @@
     "serve": "browser-sync start -s --ss public -f 'public/**' --no-notify --no-open",
     "build:js": "webpack",
     "build:js:prod": "NODE_ENV=production webpack",
-    "build:css": "postcss styles/style.css -o public/style.css -u postcss-import postcss-simple-vars postcss-nested",
+    "build:css": "postcss styles/style.css -o public/style.css -u postcss-import postcss-simple-vars postcss-extend postcss-nested",
     "build:css:prod": "npm run build:css -- -u autoprefixer cssnano --no-map",
     "watch:js": "webpack -w",
-    "watch:css": "npm run build:css -- -w"
+    "watch:css": "npm run build:css -- -w",
+    "lint": "eslint src"
   },
   "author": "Hiroki Ishiwatari",
   "license": "MIT",
@@ -42,6 +43,7 @@
     "eslint-plugin-react": "^7.1.0",
     "postcss": "^6.0.6",
     "postcss-cli": "^4.1.0",
+    "postcss-extend": "^1.0.5",
     "postcss-import": "^10.0.0",
     "postcss-nested": "^2.0.2",
     "postcss-simple-vars": "^4.0.0",
