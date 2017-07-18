@@ -7,6 +7,3 @@ npm-debug.log*
 
 # Dependency directories
 node_modules/
-
-public/app.js
-public/style.css
