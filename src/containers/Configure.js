@@ -132,6 +132,7 @@ class Configure extends Component {
           <input className="u-full-width" accept="image/*" type="file" ref="jacket"
             onChange={this.handleChangeFile}
           />
+          <p className="attention">※サーバーに画像がアップロードされることはありません。</p>
         </div>
       </form>
     )

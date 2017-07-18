@@ -13,6 +13,7 @@ class Preview extends Component {
       <div>
         <div className="canvas">
           <h3>Twitter header</h3>
+          <p className="description">Twitter用ヘッダーに適した画像です。</p>
           <Canvas
             width={1500}
             height={500}
@@ -32,6 +33,10 @@ class Preview extends Component {
         <hr/>
         <div className="canvas">
           <h3>Twitter image</h3>
+          <p className="description">
+            Twitterのタイムラインに適した画像です。<br/>
+            画像つきツイート時に、テキストが見切れないように調整されています。
+          </p>
           <Canvas
             width={900}
             height={450}
@@ -51,6 +56,7 @@ class Preview extends Component {
         <hr/>
         <div className="canvas">
           <h3>Facebook OG image</h3>
+          <p className="description">OGイメージに適したサイズの画像です。</p>
           <Canvas
             width={1200}
             height={630}
