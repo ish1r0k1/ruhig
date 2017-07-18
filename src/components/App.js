@@ -1,19 +1,16 @@
 import React from 'react'
-import ConfigureForm from '../containers/ConfigureForm'
-import PreviewTwitterHeader from '../containers/PreviewTwitterHeader'
-import PreviewOGImage from '../containers/PreviewOGImage'
-import PreviewTweetImage from '../containers/PreviewTweetImage'
+import Header from './Header'
+import Footer from './Footer'
+import Configure from '../containers/Configure'
+import Preview from '../containers/Preview'
 
 const App = () => (
   <div className="container">
-    <h1>ruhig <span className="version">beta</span></h1>
-    <ConfigureForm />
+    <Header />
+    <Configure />
     <hr/>
-    <PreviewTwitterHeader />
-    <hr/>
-    <PreviewTweetImage />
-    <hr/>
-    <PreviewOGImage />
+    <Preview />
+    <Footer />
   </div>
 )
 

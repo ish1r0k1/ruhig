@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 const webpackMarge = require('webpack-merge')
 
 const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin')
@@ -51,6 +52,11 @@ module.exports = () => {
           screw_ie8: true
         },
         sourceMap: true
+      }),
+      new webpack.DefinePlugin({
+        'process.env': {
+          'NODE_ENV': JSON.stringify('production')
+        }
       })
     ]
   })

@@ -30,7 +30,17 @@ input[type=file] {
   }
 }
 
+.header {
+  padding-bottom: 40px;
+}
+
+.footer {
+  padding-top: 40px;
+}
+
 .version {
   font-size: .4em;
   color: #a1a1a1;
 }
+
+.copyright { text-align: right; }
